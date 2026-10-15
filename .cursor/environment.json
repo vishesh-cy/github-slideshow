@@ -1,0 +1,16 @@
+{
+  "name": "github-slideshow",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "user": "ubuntu",
+  "install": "bash .cursor/install.sh",
+  "start": "bash .cursor/start.sh",
+  "ports": [
+    {
+      "name": "jekyll",
+      "port": 4000
+    }
+  ]
+}
